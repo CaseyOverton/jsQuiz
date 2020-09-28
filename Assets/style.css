@@ -1,0 +1,16 @@
+* {
+    text-align: center;
+    background-color: lavender;
+    color: darkred;
+}
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .start-mode {
+    background-color: black;
+    color: white;
+  }
