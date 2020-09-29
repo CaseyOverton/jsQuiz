@@ -1,6 +1,7 @@
 
 * {
-  font-family: 'Secular One', sans-serif;
+  font-family: 'Secular One', sans-serif; 
+  color: rgb(247, 185, 185);
 }
 body {
   text-align: center;
@@ -13,7 +14,7 @@ body {
     background-color: rgb(112, 25, 13);
   }
   #jumbo {
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(66, 29, 29);
     color: lightcyan;
   }
   #timer {

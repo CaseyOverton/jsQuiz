@@ -48,7 +48,7 @@ function returnScore(){
 
 
 // count down
-var count = 5;
+var count = 100;
 var interval = setInterval(function(){
   document.getElementById('count').innerHTML=count;
   count--;
