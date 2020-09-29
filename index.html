@@ -40,17 +40,17 @@
       <p class="lead">Click the "Start" button to get started on Javascript Quiz 1!</p>
     </div>
   </div>
-
-<!-- // test 2 of button  -->
- 
-<!-- test one of button  -->
 <br>
-<button onclick="TestsFunction()" id="button">Start</button><br><br>
+<!-- testing timer //  -->
+
+
+  <div id="count" onload="setTimeout(Timer,15000)" id="timer">Start Timer</div>
+  
+<button  id="button">Start</button><br><br>
 
     <!-- <button onclick="myFunction()">Start Quiz!</button> -->
 
     <!-- <button onclick="TestsFunction()">Tests</button> -->
-
 <div id="TestsDiv" style="display:none">
      <ol>
         <li>
@@ -80,93 +80,63 @@
         </li>
         <br>
         <li>
-            <h3>How many letters are there in "A"?</h3>
-           
-            <input type="radio" name="question3" value="A">2<br>
-            <input type="radio" name="question3" value="B">1<br>
-            <input type="radio" name="question3" value="C">3<br>
-            <input type="radio" name="question3" value="D">4<br>
+            <h3>Which of the following function of Array object reverses the order of the elements of an array?</h3>
+           <input type="radio" name="question3" value="A">reduce()<br>
+            <input type="radio" name="question3" value="B">push()<br>
+            <input type="radio" name="question3" value="C">reverse()<br>
+            <input type="radio" name="question3" value="D">reduceRight()<br>
           </li>
           <br>
           <li>
-            <h3>How many letters are there in "A"?</h3>
-           
-            <input type="radio" name="question4" value="A">2<br>
-            <input type="radio" name="question4" value="B">1<br>
-            <input type="radio" name="question4" value="C">3<br>
+            <h3>Which of the following function of Number object returns a string value version of the current number in a format that may vary according to a browser's locale settings?</h3>
+            <input type="radio" name="question4" value="A">toFixed()<br>
+            <input type="radio" name="question4" value="B">toLocaleString()<br>
+            <input type="radio" name="question4" value="C">toString()<br>
             <input type="radio" name="question4" value="D">4<br>
           </li>
           <li>
             <br>
-            <h3>How many letters are there in "A"?</h3>
-            
-            <input type="radio" name="question5" value="A">2<br>
-            <input type="radio" name="question5" value="B">1<br>
-            <input type="radio" name="question5" value="C">3<br>
-            <input type="radio" name="question5" value="D">4<br>
+            <h3>Which of the following function of String object causes a string to be displayed in a small font, as if it were in a gt&small&lt tag??</h3>
+            <input type="radio" name="question5" value="A">toUpperCase()<br>
+            <input type="radio" name="question5" value="B">toString()<br>
+            <input type="radio" name="question5" value="C">toLowerCase()<br>
+            <input type="radio" name="question5" value="D">substring()<br>
           </li>
           <br>
           <li>
-            <h3>How many letters are there in "A"?</h3>
-            // answer is B
-            <input type="radio" name="question6" value="A">2<br>
-            <input type="radio" name="question6" value="B">1<br>
-            <input type="radio" name="question6" value="C">3<br>
-            <input type="radio" name="question6" value="D">4<br>
+            <h3>Where is the correct place to insert a JavaScript?</h3>
+            <input type="radio" name="question6" value="A">In the Body Section<br>
+            <input type="radio" name="question6" value="B">In both the body and the head section<br>
+            <input type="radio" name="question6" value="C">in the head section<br>
+            <input type="radio" name="question6" value="D">in the title section<br>
           </li>
           <br>
           <li>
-            <h3>How many letters are there in "A"?</h3>
-            // answer is D
-            <input type="radio" name="question7" value="A">2<br>
-            <input type="radio" name="question7" value="B">1<br>
-            <input type="radio" name="question7" value="C">3<br>
-            <input type="radio" name="question7" value="D">4<br>
+            <h3>Which JavaScript label catches all the values, except for the ones specified?</h3>
+            <input type="radio" name="question7" value="A">catch<br>
+            <input type="radio" name="question7" value="B">label<br>
+            <input type="radio" name="question7" value="C">try<br>
+            <input type="radio" name="question7" value="D">default<br>
           </li>
           <br>
           <li>
-            <h3>How many letters are there in "A"?</h3>
-            // answer is D
-            <input type="radio" name="question8" value="A">2<br>
-            <input type="radio" name="question8" value="B">1<br>
-            <input type="radio" name="question8" value="C">3<br>
-            <input type="radio" name="question8" value="D">4<br>
+            <h3>What will be returned? 
+              var x = 3;
+              var y = "3";
+              return (x + y)
+              </h3>
+            <input type="radio" name="question8" value="A">9<br>
+            <input type="radio" name="question8" value="B">3 3<br>
+            <input type="radio" name="question8" value="C">6<br>
+            <input type="radio" name="question8" value="D">33<br>
           </li>
           <br>
           <li>
-            <h3>How many letters are there in "A"?</h3>
-            // answer is A
-            <input type="radio" name="question9" value="A">2<br>
-            <input type="radio" name="question9" value="B">1<br>
-            <input type="radio" name="question9" value="C">3<br>
-            <input type="radio" name="question9" value="D">4<br>
-          </li>
-          <br>
-          <li>
-            <h3>How many letters are there in "A"?</h3>
-            // answer is B
-            <input type="radio" name="question10" value="A">2<br>
-            <input type="radio" name="question10" value="B">1<br>
-            <input type="radio" name="question10" value="C">3<br>
-            <input type="radio" name="question10" value="D">4<br>
-          </li>
-          <br>
-          <li>
-            <h3>How many letters are there in "A"?</h3>
-            // answer is D
-            <input type="radio" name="question11" value="A">2<br>
-            <input type="radio" name="question11" value="B">1<br>
-            <input type="radio" name="question11" value="C">3<br>
-            <input type="radio" name="question11" value="D">4<br>
-          </li>
-          <br>
-          <li>
-            <h3>How many letters are there in "A"?</h3>
-            // answer is C
-            <input type="radio" name="question12" value="A">2<br>
-            <input type="radio" name="question12" value="B">1<br>
-            <input type="radio" name="question12" value="C">3<br>
-            <input type="radio" name="question12" value="D">4<br>
+            <h3>What are variables used for in JavaScript Programs?</h3>
+            <input type="radio" name="question9" value="A">Storing numbers, dates, or other values<br>
+            <input type="radio" name="question9" value="B">Varying randomly<br>
+            <input type="radio" name="question9" value="C">Numbers<br>
+            <input type="radio" name="question9" value="D">None of the above<br>
           </li>
       </ol>
     </div>

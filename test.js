@@ -16,32 +16,18 @@
     // elem.textContent = "This is the first question?";
 
 
-  var answers = ["A","C","C","B","A","C","B","D","D","A","B","D","C"], 
+  var answers = ["A","C","C","B","B","C","B","D","D","A"], 
     tot = answers.length;
 
-    // shows text when button is clicked
-    
-    // function testsFunction() {
-    //   var T = document.getElementById("TestsDiv");
-    //   T.style.display = "block";  // <-- Set it to block
-
-      // toggle css 
-      function myFunction() {
-      var element = document.body;
-      element.classList.toggle("gameStart");
-    }
-  
+var startButton = document.getElementById("button")
+startButton.addEventListener("click", function(){
+  TestsFunction()
+  startTimer()
+})
     function TestsFunction() {
       document.getElementById("TestsDiv").style.display = "";
   }
-
-
   
-// toggle css 
-    function myFunction() {
-      var element = document.body;
-      element.classList.toggle("gameStart");
-    }
 
 function getCheckedValue( radioName ){
     var radios = document.getElementsByName( radioName ); // Get radio group by-name
@@ -49,29 +35,35 @@ function getCheckedValue( radioName ){
       if(radios[y].checked) return radios[y].value; // return the checked value
 }
 
-function getScore(){
-  var score = 0;
-  for (var i=0; i<tot; i++)
-    if(getCheckedValue("question"+i)===answers[i]) score += 1; 
-  return score;
-}
-
 function returnScore(){
-  alert("Your score is "+ getScore() +"/"+ tot);
-}
-  
-
-function startInterval() {  // everything inside this function that is called with click on button
-  downloadTimer = setInterval(function function1(){
-    document.getElementById("countdown").innerHTML = timeleft + "&nbsp"+"seconds remaining";
-
-    timeleft -= 1;
-    if(timeleft <= 0){
-      clearInterval(downloadTimer);
-      document.getElementById("countdown").innerHTML = "Time is up!"
-    }
-  }, 1000);
+  var score = 0;
+  for (var i=0; i<tot; i++) {
+    if (getCheckedValue("question"+i)===answers[i]) score += 1; 
+  } 
+  alert("Your score is "+ score +"/"+ tot);
+ saveStorage(score)
 }
 
+  function startTimer() {
 
-  
+
+// count down
+var count = 5;
+var interval = setInterval(function(){
+  document.getElementById('count').innerHTML=count;
+  count--;
+  if (count === 0){
+    clearInterval(interval);
+    document.getElementById('count').innerHTML='Done';
+    returnScore()
+  }
+}, 1000);
+}
+function saveStorage(data) {
+var currentData = JSON.parse(localStorage.getItem("High-Scores!")) || []
+currentData.push(data)
+localStorage.setItem("High-Scores!", JSON.stringify(currentData))
+}
+function showScore() {
+  alert("returnScore()")
+}

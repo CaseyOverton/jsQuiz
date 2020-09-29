@@ -16,3 +16,12 @@ body {
     background-color: rgb(43, 43, 43);
     color: lightcyan;
   }
+  #timer {
+    position: fixed;
+    right: 2;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+    background-color: lightsalmon;
+  }
+  
