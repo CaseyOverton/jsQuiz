@@ -1,16 +1,18 @@
+
 * {
-    text-align: center;
-    background-color: lavender;
-    color: darkred;
+  font-family: 'Secular One', sans-serif;
 }
 body {
+  text-align: center;
     padding: 25px;
-    background-color: white;
-    color: black;
+    background-color: rgb(1, 1, 3);
+    color:  lavender;
     font-size: 25px;
+}
+  #button {
+    background-color: rgb(112, 25, 13);
   }
-  
-  .start-mode {
-    background-color: black;
-    color: white;
+  #jumbo {
+    background-color: rgb(43, 43, 43);
+    color: lightcyan;
   }

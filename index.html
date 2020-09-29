@@ -3,25 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
     <title>Java Script Text</title>
 
 </head>
 <body>
-    <h1>Quiz</h1>
-<!-- // <p id="para"></p> -->
-    <button onclick="myFunction()">Start Qiuz!</button>
-    <ul style= "list-style: none;>
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> Quiz 1<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Study Guides</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Practice</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="jumbo" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">JavaScript Quiz 1</h1>
+      <p class="lead">Click the "Start" button to get started on Javascript Quiz 1!</p>
+    </div>
+  </div>
+
+<!-- // test 2 of button  -->
+ 
+<!-- test one of button  -->
+<br>
+<button onclick="TestsFunction()" id="button">Start</button><br><br>
+
+    <!-- <button onclick="myFunction()">Start Quiz!</button> -->
+
+    <!-- <button onclick="TestsFunction()">Tests</button> -->
+
+<div id="TestsDiv" style="display:none">
+     <ol>
         <li>
+          <br>
+          <!-- // style= "list-style: none;" -->
           <h3>What is the symbol for null?</h3>
         <input type="radio" name="question0" value="A">!=<br>
           <input type="radio" name="question0" value="B">/=<br>
           <input type="radio" name="question0" value="C">-=<br>
           <input type="radio" name="question0" value="D">--<br>
         </li>
+        <br>
         <li>
           <h3>Inside which HTML element do we put the JavaScript?</h3> 
-          // answer is C
           <input type="radio" name="question1" value="A">&ltjavascript&gt<br>
           <input type="radio" name="question1" value="B">&ltjs&gt<br>
           <input type="radio" name="question1" value="C">&ltscript&gt<br>
@@ -29,36 +72,40 @@
         </li>
         <li>
           <h3>How do you create a function in JavaScript? </h3>
-          //answer is C
+          
           <input type="radio" name="question2" value="A">function:function<br>
           <input type="radio" name="question2" value="B">function  myFunction()<br>
           <input type="radio" name="question2" value="C">function = myFunction()<br>
           <input type="radio" name="question2" value="D">.function.append<br>
         </li>
+        <br>
         <li>
             <h3>How many letters are there in "A"?</h3>
-            // answer is B
+           
             <input type="radio" name="question3" value="A">2<br>
             <input type="radio" name="question3" value="B">1<br>
             <input type="radio" name="question3" value="C">3<br>
             <input type="radio" name="question3" value="D">4<br>
           </li>
+          <br>
           <li>
             <h3>How many letters are there in "A"?</h3>
-            // answer is A
+           
             <input type="radio" name="question4" value="A">2<br>
             <input type="radio" name="question4" value="B">1<br>
             <input type="radio" name="question4" value="C">3<br>
             <input type="radio" name="question4" value="D">4<br>
           </li>
           <li>
+            <br>
             <h3>How many letters are there in "A"?</h3>
-            // answer is C
+            
             <input type="radio" name="question5" value="A">2<br>
             <input type="radio" name="question5" value="B">1<br>
             <input type="radio" name="question5" value="C">3<br>
             <input type="radio" name="question5" value="D">4<br>
           </li>
+          <br>
           <li>
             <h3>How many letters are there in "A"?</h3>
             // answer is B
@@ -67,6 +114,7 @@
             <input type="radio" name="question6" value="C">3<br>
             <input type="radio" name="question6" value="D">4<br>
           </li>
+          <br>
           <li>
             <h3>How many letters are there in "A"?</h3>
             // answer is D
@@ -75,6 +123,7 @@
             <input type="radio" name="question7" value="C">3<br>
             <input type="radio" name="question7" value="D">4<br>
           </li>
+          <br>
           <li>
             <h3>How many letters are there in "A"?</h3>
             // answer is D
@@ -83,6 +132,7 @@
             <input type="radio" name="question8" value="C">3<br>
             <input type="radio" name="question8" value="D">4<br>
           </li>
+          <br>
           <li>
             <h3>How many letters are there in "A"?</h3>
             // answer is A
@@ -91,6 +141,7 @@
             <input type="radio" name="question9" value="C">3<br>
             <input type="radio" name="question9" value="D">4<br>
           </li>
+          <br>
           <li>
             <h3>How many letters are there in "A"?</h3>
             // answer is B
@@ -99,6 +150,7 @@
             <input type="radio" name="question10" value="C">3<br>
             <input type="radio" name="question10" value="D">4<br>
           </li>
+          <br>
           <li>
             <h3>How many letters are there in "A"?</h3>
             // answer is D
@@ -107,6 +159,7 @@
             <input type="radio" name="question11" value="C">3<br>
             <input type="radio" name="question11" value="D">4<br>
           </li>
+          <br>
           <li>
             <h3>How many letters are there in "A"?</h3>
             // answer is C
@@ -115,10 +168,14 @@
             <input type="radio" name="question12" value="C">3<br>
             <input type="radio" name="question12" value="D">4<br>
           </li>
-      </ul>
+      </ol>
+    </div>
       
-      <button onclick="returnScore()">View Results</button>
+      <button onclick="returnScore()" id="button">View Results</button>
 
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./test.js">
 
         </script>

@@ -19,9 +19,28 @@
   var answers = ["A","C","C","B","A","C","B","D","D","A","B","D","C"], 
     tot = answers.length;
 
+    // shows text when button is clicked
+    
+    // function testsFunction() {
+    //   var T = document.getElementById("TestsDiv");
+    //   T.style.display = "block";  // <-- Set it to block
+
+      // toggle css 
+      function myFunction() {
+      var element = document.body;
+      element.classList.toggle("gameStart");
+    }
+  
+    function TestsFunction() {
+      document.getElementById("TestsDiv").style.display = "";
+  }
+
+
+  
+// toggle css 
     function myFunction() {
       var element = document.body;
-      element.classList.toggle("dark-mode");
+      element.classList.toggle("gameStart");
     }
 
 function getCheckedValue( radioName ){
@@ -41,4 +60,18 @@ function returnScore(){
   alert("Your score is "+ getScore() +"/"+ tot);
 }
   
+
+function startInterval() {  // everything inside this function that is called with click on button
+  downloadTimer = setInterval(function function1(){
+    document.getElementById("countdown").innerHTML = timeleft + "&nbsp"+"seconds remaining";
+
+    timeleft -= 1;
+    if(timeleft <= 0){
+      clearInterval(downloadTimer);
+      document.getElementById("countdown").innerHTML = "Time is up!"
+    }
+  }, 1000);
+}
+
+
   
